@@ -7,22 +7,34 @@ def decision():
     dec=int(input("would you like to view (1), display(2) ,register (3), or exit (4)"))
     return dec
               
-def check():
+
+
+def display():
+    print("You've registed for the folowing courses")
+    for i in studentcourses:
+        print(i)
+       
+    
+    
+    
+#def check():
     
 def main():
    
     while True:
+        decision()
         try:
+            intdec=decision()
             
-            check()
-            if decision()==4:
+        
+            if intdec==4:
                 break
-            elif deicion()==1:
+            elif intdec==1:
                 view()
-            elif decision==2:
+            elif intdec==2:
                 display()
-                
-            elif decision==3:
+            
+            elif intdec==3:
                 register()
             
             
