@@ -6,7 +6,11 @@ studentcourses=[]
 def decision():
     dec=int(input("would you like to view (1), display(2) ,register (3), or exit (4)"))
     return dec
-              
+
+def view():
+    print("avalible courses to register:")
+    for i in courses:
+        print(i)
 
 
 def display():
@@ -22,7 +26,6 @@ def display():
 def main():
    
     while True:
-        decision()
         try:
             intdec=decision()
             
