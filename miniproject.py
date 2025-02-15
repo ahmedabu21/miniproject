@@ -18,11 +18,20 @@ def display():
     for i in studentcourses:
         print(i)
        
+def register():
     
+    if len(studentcourses) <3:
+        print(courses)
+        user_course = input("Enter course to register: ")
+        studentcourses.append(user_course)
+        
+    else:
+        print("you cant register for more than three classes")
+
+        
+        
     
-    
-#def check():
-    
+
 def main():
    
     while True:
@@ -32,20 +41,23 @@ def main():
         
             if intdec==4:
                 break
-            elif intdec==1:
-                view()
-            elif intdec==2:
-                display()
-            
+
             elif intdec==3:
                 register()
+            elif intdec==2:
+                display()
+            elif intdec==1:
+                view()
+                
+            else:
+                print("enter a number 1-4")
             
             
             
             
     
         except ValueError:
-            print("h")
+            print("Enter a valid Option")
             
         
 
